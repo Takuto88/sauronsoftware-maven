@@ -11,6 +11,6 @@ To use this repository, just add the following entry to your pom.xml:
 <repositories>
 	<repository>
         <id>sauronsoftware-github</id>
-        <url>https://github.com/Takuto88/sauronsoftware-maven/raw/master/releases</url>
+        <url>https://raw.github.com/Takuto88/sauronsoftware-maven/master/releases</url>
     </repository>
 </repositories>
