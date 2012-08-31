@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>it.sauronsoftware</groupId>
+    <artifactId>ftp4j</artifactId>
+    <version>1.7.2</version>
+    <packaging>jar</packaging>
+    <description>
+        The ftp4j library implements a Java full-featured FTP client. With ftp4j embedded in your application you can:
+        transfer files (upload and download), browse the FTP site (directory listing), create, delete, rename and move
+        directories and files.
+    </description>
+    <distributionManagement>
+        <repository>
+            <id>sauronsoftware-github</id>
+            <url>https://github.com/Takuto88/ftp4j/raw/master/maven-repository/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>sauronsoftware-github-snapshots</id>
+            <url>https://github.com/Takuto88/ftp4j/raw/master/maven-repository/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <scriptSourceDirectory>src</scriptSourceDirectory>
+        <testSourceDirectory>src</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>src</directory>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src</directory>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.4</source>
+                    <target>1.4</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadoc</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
