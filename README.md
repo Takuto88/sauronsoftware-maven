@@ -8,9 +8,11 @@ and like to use them as maven dependency.
 
 To use this repository, just add the following entry to your pom.xml:
 
+```xml
 <repositories>
 	<repository>
         <id>sauronsoftware-github</id>
         <url>https://raw.github.com/Takuto88/sauronsoftware-maven/master/releases</url>
     </repository>
 </repositories>
+```
